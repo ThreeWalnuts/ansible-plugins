@@ -1,0 +1,2 @@
+TASK_DATETIME %{MONTH} %{MONTHDAY} %{YEAR} %{HOUR}:%{MINUTE}:%{SECOND}
+TASK_LOG_PATTERN %{TASK_DATETIME:task_datetime} - %{IPORHOST:node_IP} - %{DATA:task_name} - %{WORD:task_status} - %{NUMBER:task_duration:float} - %{GREEDYDATA:module_data}
